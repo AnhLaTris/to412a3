@@ -1,0 +1,82 @@
+body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5dc;
+        background-image: url('./image/ảnh\ nền.png'); /* Đường dẫn đến ảnh nền */
+        background-size: cover; /* Ảnh sẽ bao phủ toàn bộ màn hình */
+        background-position: center; /* Căn giữa ảnh nền */
+        background-attachment: fixed; /* Giữ ảnh cố định khi cuộn */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+    padding-top: 20px;    
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Định dạng ô bài tập */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+}
+
+.card {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    width: 200px;
+    position: relative;
+}
+
+/* Phần "Bài X" đưa lên trên */
+.card .lesson-title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 5px;
+}
+
+/* Mỗi ô có màu khác nhau */
+.card:nth-child(1) { background-color: #3498db; } /* Xanh dương */
+.card:nth-child(2) { background-color: #f1c40f; } /* Vàng */
+.card:nth-child(3) { background-color: #9b59b6; } /* Tím */
+.card:nth-child(4) { background-color: #e67e22; } /* Cam */
+.card:nth-child(5) { background-color: #2ecc71; } /* Xanh lá */
+.card:nth-child(6) { background-color: #e74c3c; } /* Đỏ */
+.card:nth-child(7) { background-color: #1abc9c; } /* Xanh ngọc */
+.card:nth-child(8) { background-color: #d35400; } /* Cam đậm */
+.card:nth-child(9) { background-color: #8e44ad; } /* Tím đậm */
+.card:nth-child(10) { background-color: #c0392b; } /* Đỏ đậm */
+.card:nth-child(11) { background-color: #16a085; } /* Xanh lục bảo */
+
+.card:hover {
+    transform: scale(1.05);
+}
